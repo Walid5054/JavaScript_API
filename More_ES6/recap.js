@@ -35,10 +35,14 @@ const products = [
     brand: "apple",
   },
 ];
-products.forEach((product) => {
-  console.log(product);
+const newProduct = products.map((p) => {
+  if (p.brand == "apple") {
+    p.price = p.price + 100;
+  }
+  return p;
 });
-const newProduct = products.filter((product) => product.price > 1000);
 console.log(newProduct);
-const product = products.find((p) => p.color == "black");
-console.log(product);
+const singleProduct = products.find((p) => p.id == 3);
+console.log(singleProduct);
+const newProduct2 = products.filter((p) => p.name == "iphone");
+console.log(newProduct2);
