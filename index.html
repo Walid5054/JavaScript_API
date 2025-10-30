@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        border: 2px solid gray;
+        margin: 3px;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="loadData()">Load Data</button>
+    <button onclick="loadUser()">Load User</button>
+    <button onclick="LoadUser()">LOAD User</button>
+    <button onclick="handlePost()">Lead post</button>
+    <div class="users">
+      <ul id="user"></ul>
+    </div>
+    <div id="post-container"></div>
+    <script src="API_JSON_data/fetch.js"></script>
+    <script src="API_JSON_data/api.js"></script>
+    <script src="API_JSON_data/dynamic.js"></script>
+    <script src="API_JSON_data/post.js"></script>
+  </body>
+</html>
